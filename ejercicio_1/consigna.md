@@ -1,24 +1,24 @@
 # Gestión de Ingredientes y Recetas
 
-## Parte 1: Entidad Ingrediente
+## Parte A: Entidad Ingrediente
 
 1. Crea la entidad `Ingrediente` con los atributos `nombre` y `cantidad`. Implementa constructores, getters, setters y sobrecarga del método `toString()`.
 2. Desarrolla una clase principal que instancie objetos `Ingrediente` y los muestre por pantalla.
 
-## Parte 2: Funcionalidades de la Despensa
+## Parte B: Funcionalidades de la Despensa
 
 1. Agrega el método `sacar()` a la entidad `Ingrediente`, que permita disminuir la cantidad del ingrediente, verificando que haya suficiente cantidad disponible.
 2. Implementa la entidad `Despensa`, que contendrá un arreglo de `Ingrediente`. Añade el método `addIngrediente` para agregar un ingrediente a la despensa, y `getIngrediente` para obtener una cantidad específica de un ingrediente sin eliminarlo de la despensa.
 3. Desarrolla una clase principal que verifique el funcionamiento de las funcionalidades implementadas.
 
-## Parte 3: Clase Receta y Subclases
+## Parte C: Clase Receta y Subclases
 
 1. Implementa la clase `Receta`, con atributos `tiempoCoccion`, `ingredientes` (un arreglo de `Ingrediente`) y `preparacion`.
 2. Esta clase servirá como base para otras clases como `HuevoDuro`, que tendrá en el arreglo dos ingredientes (huevo y agua), un tiempo de cocción de 10 minutos y una preparación específica.
 3. Construye al menos tres clases heredadas con recetas diferentes.
 4. Desarrolla una clase principal que pruebe las clases y funcionalidades implementadas.
 
-## Parte 4: Gestión de Cocina y Chef
+## Parte D: Gestión de Cocina y Chef
 
 1. Crea la entidad `Chef` con los atributos `nombre` y `estrellasMichelin`. Implementa constructores, setters, getters y sobrecarga del método `toString()`.
 2. Agrega una clase `CocinaService` que será utilizada por el Chef para preparar las recetas implementadas.
