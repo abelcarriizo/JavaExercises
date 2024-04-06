@@ -27,6 +27,15 @@ public class Ingrediente {
         this.cantidad = cantidad;
     }
 
+    // Metodo que disminuye la cantidad de un ingrediente
+    public boolean sacar(int cantidad) {
+        if(cantidad > this.cantidad) {
+            return false;
+        }
+        this.cantidad -= cantidad;
+        return true;
+    }
+
     @Override
     public String toString() {
         return "Ingrediente: " + this.nombre + " | " + "cantidad: " + this.cantidad;
