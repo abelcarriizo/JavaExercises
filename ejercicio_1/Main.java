@@ -12,7 +12,8 @@ public class Main {
         despensa.addIngrediente(harina);
         despensa.addIngrediente(sal);
 
-        despensa.getIngrediente("harina");
+        despensa.getIngrediente("harina", 5);
+        System.out.println("Ingrediente: " + harina);
 
     }
 }

@@ -13,10 +13,11 @@ public class Despensa {
         this.ingredientes[Despensa.contador++] = ingrediente;
     }
 
-    public boolean getIngrediente(String ingrediente) {
+    public boolean getIngrediente(String ingrediente, int cantidad) {
         for (int i = 0; i < this.ingredientes.length; i++) {
             System.out.println(this.ingredientes[i]);
             if (this.ingredientes[i] != null && this.ingredientes[i].getNombre().equals(ingrediente)){
+                this.ingredientes[i].sacar(cantidad);
                 return true;
             }
         }

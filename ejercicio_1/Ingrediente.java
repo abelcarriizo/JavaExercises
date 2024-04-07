@@ -38,6 +38,6 @@ public class Ingrediente {
 
     @Override
     public String toString() {
-        return "Ingrediente: " + this.nombre + " | " + "cantidad: " + this.cantidad;
+        return this.nombre + " | " + "cantidad: " + this.cantidad;
     }
 }
