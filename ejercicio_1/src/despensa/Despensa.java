@@ -1,4 +1,6 @@
-package ejercicio_1;
+package despensa;
+
+import ingredientes.Ingrediente;
 
 public class Despensa {
     private Ingrediente[] ingredientes;

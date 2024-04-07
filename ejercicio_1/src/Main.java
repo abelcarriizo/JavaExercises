@@ -1,4 +1,5 @@
-package ejercicio_1;
+import ingredientes.Ingrediente;
+import src.despensa.Despensa;
 
 public class Main {
     public static void main(String[] args) {

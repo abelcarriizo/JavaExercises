@@ -1,4 +1,4 @@
-package ejercicio_1;
+package ingredientes;
 
 public class Ingrediente {
     private String nombre;
