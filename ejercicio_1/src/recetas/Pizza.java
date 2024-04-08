@@ -7,7 +7,7 @@ public class Pizza extends Receta {
         super(30, new Ingrediente[]{new Ingrediente("Masa de pizza", 1), new Ingrediente("Salsa de tomate", 100), new Ingrediente("Queso mozzarella", 150), new Ingrediente("Jamón", 100)}, "Extender la masa, agregar salsa de tomate, queso, jamón y champiñones. Hornear durante 30 minutos.");
     }
 
-    public String obtenerReceta() {
-        return "PIZZA\n" + super.obtenerReceta();
+    public String toString() {
+        return "PIZZA\n" + super.toString();
     }
 }

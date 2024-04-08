@@ -13,7 +13,12 @@ public class Receta {
         this.preparacion = preparacion;
     }
 
-    public String obtenerReceta() {
+    public Ingrediente[] getIngredientes(){
+        return this.ingredientes;
+    }
+
+    @Override
+    public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Receta:\n");
         sb.append("Tiempo de Cocción: ").append(this.tiempoCoccion).append(" minutos\n");

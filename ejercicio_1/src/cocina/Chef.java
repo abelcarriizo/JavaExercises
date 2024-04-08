@@ -1,3 +1,5 @@
+package cocina;
+
 public class Chef {
     private String nombre;
     private int estrellasMichelin;
