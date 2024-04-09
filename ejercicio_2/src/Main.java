@@ -1,46 +1,31 @@
-import cocina.*;
-import despensa.Despensa;
-import ingredientes.Ingrediente;
-import recetas.*;
+import perifericos.*;
+import computadora.*;
+import orden.*;
 
 public class Main {
     public static void main(String[] args) {
+        Monitor lg = new Monitor("lg",27.0);
+        Monitor samsung = new Monitor("samsung", 40.0);
 
-        Chef chef = new Chef("Auguste Gusteau", 5);
+        Raton logitech = new Raton("USB", "Logitech");
+        Raton philip = new Raton("Inalambrico", "Philip");
 
-        //Recetas
-        HuevoDuro huevoDuro = new HuevoDuro();
-        Pizza pizza = new Pizza();
-        Omelette omelette = new Omelette();
+        Teclado redDragon = new Teclado("USB-C", "Red Dragon");
+        Teclado hyperX = new Teclado("Bluetooth", "HyperX");
 
-        //Ingredientes
-        Ingrediente huevo = new Ingrediente("Huevo", 1);
-        Ingrediente agua = new Ingrediente("Agua", 100);
-        Ingrediente masaDePizza = new Ingrediente("Masa de pizza", 1);
-        Ingrediente salsaDeTomate = new Ingrediente("Salsa de tomate", 100); 
-        Ingrediente quesoMozarella = new Ingrediente("Queso mozzarella", 150); 
-        Ingrediente jamon = new Ingrediente("Jamón", 100);
-        Ingrediente queso = new Ingrediente("Queso", 50);
-        Ingrediente tomate = new Ingrediente("Tomate", 1);
+        Computadora razer = new Computadora("Razer Blade", lg, redDragon, logitech);
+        Computadora asus = new Computadora("Asus Rog Zephirus", samsung, hyperX, philip);
+
+        Orden orden1 = new Orden();
+        Orden orden2 = new Orden();
+
+        orden1.agregarComputadora(razer);
+        orden1.agregarComputadora(asus);
+
+        orden1.mostrarOrden();
+
+        orden2.agregarComputadora(asus);
         
-        //Despensa
-        Despensa despensa = new Despensa(8);
-        despensa.addIngrediente(huevo);
-        despensa.addIngrediente(agua);
-        despensa.addIngrediente(masaDePizza);
-        despensa.addIngrediente(salsaDeTomate);
-        despensa.addIngrediente(quesoMozarella);
-        despensa.addIngrediente(jamon);
-        despensa.addIngrediente(queso);
-        despensa.addIngrediente(tomate);
-
-
-        //Cocinar
-        CocinaService cocinar = new CocinaService();
-        
-        cocinar.cocinar(chef, huevoDuro, despensa);
-        cocinar.cocinar(chef, pizza, despensa);
-        cocinar.cocinar(chef, omelette, despensa);
-        cocinar.cocinar(chef, huevoDuro, despensa);
-    }
+        orden2.mostrarOrden();
+    }    
 }
